@@ -1,0 +1,29 @@
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.row .column{
+    flex: 33.3%;
+    overflow: hidden;
+    width: 100%;
+    padding: 0px 10px;
+}
+.row .column img{
+    width: 100%;
+    margin: 10px 0px;
+    filter: grayscale(1) brightness(.7);
+    transition: .2s ease-in-out;
+}
+.row .column img:hover{
+    filter: grayscale(0) brightness(1);
+}
+@media (max-width:800px) {
+    .row .column{
+        flex: 50%;
+    }
+}
+@media (max-width:600px) {
+    .row .column{
+        flex: 100%;
+    }
+}
